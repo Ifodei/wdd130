@@ -161,3 +161,14 @@ figcaption {
     font-style: italic;
     font-size: 0.9rem;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
