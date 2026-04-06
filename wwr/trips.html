@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dry Oar Boating | Trips</title>
     <meta name="description"
-      content="Discover our exciting white water rafting adventures. From family-friendly floats to extreme rapids, we have the perfect trip for you.">
-    <meta name="author" content="Your Name">
+      content="Detailed information on white water rafting adventures and equipment provided by Dry Oar.">
+    <meta name="author" content="Isaka Fodei">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/z-wwr-blue.jpg" alt="rafting company logo">
+        <img src="images/z-wwr-blue.jpg" alt="rafting company logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -22,46 +22,47 @@
         </nav>
     </header>
 
-    <main>
-        <h1>River Adventures</h1>
+    <main class="trips-main">
+        <h1 class="trips-title">River Adventures</h1>
 
         <!-- Call to Action Section -->
         <section class="cta-contact">
             <p>Ready to hit the water? Contact our guides today!</p>
-            <a class="join" href="contact.html">Contact Us</a>
+            <a class="join-button" href="contact.html">Contact Us</a>
         </section>
 
-        <!-- Detailed Trip Descriptions -->
-        <section class="trips-container">
-            <div class="trip-card">
-                <img src="images/river-calm.jpg" alt="Calm family rafting trip">
+        <!-- Detailed Trip Descriptions (Using a Grid) -->
+        <section class="trips-grid">
+            <article class="trip-card">
+                <img src="images/calm-family.jpg" alt="Calm family rafting trip" loading="lazy">
                 <h2>Family Fun Float</h2>
-                <p>Perfect for families with young children or those looking for a relaxing day on
-                    the water. This 3-hour trip features gentle currents and beautiful wildlife
-                    viewing.</p>
-            </div>
-            <div class="trip-card">
-                <img src="images/river-medium.jpg" alt="Intermediate rafting rapids">
+                <p>Perfect for families with young children or those looking for a relaxing day.
+                    This 3-hour trip features gentle currents and beautiful wildlife viewing.</p>
+            </article>
+
+            <article class="trip-card">
+                <img src="images/intermediate.jpg" alt="Intermediate rafting rapids" loading="lazy">
                 <h2>The Main Salmon Run</h2>
                 <p>Our most popular full-day trip! Experience Class III rapids, enjoy a riverside
-                    lunch, and learn about the local geology from our expert guides.</p>
-            </div>
-            <div class="trip-card">
-                <img src="images/river-extreme.jpg" alt="Extreme white water rafting">
+                    lunch, and learn about local geology from expert guides.</p>
+            </article>
+
+            <article class="trip-card">
+                <img src="images/extreme.jpg" alt="Extreme white water rafting"
+                  loading="lazy">
                 <h2>Hell's Canyon Challenge</h2>
-                <p>Not for the faint of heart. This multi-day expedition takes you through intense
-                    Class IV+ rapids and deep canyon stretches. Equipment like helmets and
-                    high-buoyancy life jackets are provided.</p>
-            </div>
+                <p>Multi-day expedition through intense Class IV+ rapids. High-quality helmets and
+                    high-buoyancy life jackets are provided for all adventurers.</p>
+            </article>
         </section>
 
         <!-- Trip Summary Table -->
-        <section class="trip-table">
-            <h2>Trip Summary</h2>
-            <table>
+        <section class="table-container">
+            <h2>Trip Comparison</h2>
+            <table class="trip-table">
                 <thead>
                     <tr>
-                        <th>Trip Name</th>
+                        <th>Adventure</th>
                         <th>Duration</th>
                         <th>Difficulty</th>
                         <th>Price</th>
@@ -94,15 +95,11 @@
     <footer>
         <p>&copy; 2026 Dry Oar Rafting Co. | Isaka Fodei</p>
         <nav class="socialmedia">
-        <a href="https://facebook.com">
-            <img src="images/icons8-facebook-50.png" alt="Facebook icon">
-        </a>
-        <a href="https://twitter.com">
-            <img src="images/icons8-twitter-50.png" alt="Twitter icon">
-        </a>
-        <a href="https://instagram.com">
-            <img src="images/icons8-instagram-logo-50.png" alt="Instagram icon">
-        </a>
+            <a href="https://facebook.com"><img src="images/icons8-facebook-50.png"
+                  alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/icons8-instagram-logo-50.png"
+                  alt="Instagram"></a>
         </nav>
     </footer>
 </body>

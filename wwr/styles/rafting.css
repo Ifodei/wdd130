@@ -130,3 +130,38 @@ main {
     background-color: #f2f2f2;
     /* Zebra striping */
 }
+
+/* Container for all the trip cards */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual card styling */
+.trip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Clips the image corners to the border-radius */
+    display: flex;
+    flex-direction: column;
+}
+
+/* THE FIX: Resizing the large images */
+.trip-card img {
+    width: 100%;
+    /* Fills the card width */
+    height: 250px;
+    /* Sets a consistent height for all images */
+    object-fit: cover;
+    /* Crops the image to fill the box without stretching */
+    display: block;
+}
+
+.trip-card h2,
+.trip-card p {
+    padding: 10px;
+    margin: 0;
+}
